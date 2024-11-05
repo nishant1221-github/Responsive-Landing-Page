@@ -18,7 +18,7 @@ Technologies Used:
 * CSS3: Flexbox and Grid layout systems for fluid and responsive design.
 * JavaScript: Interactive elements and smooth scrolling functionality.
 * Responsive Frameworks: Utilizes media queries for adaptive layouts.
-* 
+ 
 This landing page is perfect for anyone looking to create a professional, sleek, and responsive web presence. Whether you're building a personal portfolio, a product launch page, or a marketing site, this template serves as a solid foundation for your project.
 
 
@@ -40,7 +40,9 @@ Customization:
 You can easily customize this landing page by editing the following:
 
 // Content: Modify the text content in index.html.
+
 // Styles: Change the look and feel by editing the styles.css file.
+
 // Images: Replace the images in the assets/ folder with your own visuals.
 
 
