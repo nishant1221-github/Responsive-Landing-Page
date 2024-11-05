@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Interactive Navigation Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        .navbar {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar.scrolled {
+            background-color: #a6dfc7; /* Dark background */
+            color: #854c96; /* White text */
+        }
+        .navbar a:hover {
+            color: #fbbf24; /* Amber color on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav id="navbar" class="navbar fixed w-full bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-bold">
+            <a href="#" class="text-gray-800">Nishant</a>
+        </div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="text-gray-800 hover:text-amber-500">Home</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-amber-500">About</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-amber-500">Services</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-amber-500">Portfolio</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-amber-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mt-24 p-6">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Our Website</h1>
+        <p class="text-lg text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+        <p class="text-lg text-gray-700 mb-6">Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
+        <p class="text-lg text-gray-700 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum sed, sit nam placeat et vero excepturi tenetur ratione dignissimos odio dolor. Architecto velit nobis ullam, illo voluptatem veniam repudiandae animi distinctio nihil temporibus non dolorem maiores sapiente quo, fuga atque rerum voluptate aliquam repellat at eaque nam corporis! Delectus.
+        </p>
+        <p class="text-lg text-gray-700 mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti maiores odit incidunt, repudiandae eligendi illo dolore! Modi labore, ea adipisci praesentium veniam aut exercitationem consequuntur reprehenderit amet eius ex blanditiis placeat. Expedita rem ducimus velit? Libero reprehenderit aliquid quam quae magnam explicabo facilis odio recusandae tempore mollitia a, nesciunt doloribus porro blanditiis asperiores corrupti. Mollitia odio quaerat cupiditate reiciendis alias nisi similique vel doloremque. Obcaecati rerum perferendis deleniti quas commodi debitis qui est rem perspiciatis ea. Excepturi id illum saepe, repellat, vitae cumque dolore expedita debitis enim tenetur quasi aliquam nobis omnis fuga mollitia necessitatibus inventore animi rem eveniet! Voluptatibus?</p>
+        <p class="text-lg text-gray-700 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quos odio natus unde! Dolor rerum vero vitae, ea velit nesciunt officiis nemo fugit voluptas ipsam sequi debitis numquam? Id, reprehenderit sint cum laborum tempora nisi similique ratione recusandae expedita velit nulla omnis nemo explicabo officiis in atque quos molestias? Neque dolor cumque reiciendis nisi commodi vero ipsum ea possimus ducimus, modi, quos aliquid illum! Facere iure eligendi quod perferendis exercitationem nulla? Dolorem consequuntur illum ipsa harum autem. Voluptatibus, excepturi dolorem magni eius minus ipsam eveniet illum ex provident cumque magnam fugiat delectus. Unde voluptatem soluta nihil cumque necessitatibus dolorem excepturi.</p>
+    <div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
